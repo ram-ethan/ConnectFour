@@ -1,0 +1,382 @@
+main {
+    background: #C9CDD8;
+
+    display: flex;
+    /* align-items: center; */
+    flex-direction: column;
+    /* align-items: center; */
+    padding-left: 20vw;
+    padding-right: 20vw;
+    /* border: 2px solid red; */
+}
+
+.headingContainer {
+    margin-top: 1vw;
+}
+
+.world {
+    margin: 0;
+    font-size: 2vh;
+    color: #7d8391;
+}
+
+.connect4 {
+    height: 100vh;
+    background: azure;
+    display: flex;
+    flex-direction: column;
+}
+
+.heading {
+    font-size: 1.5vw;
+
+    font-weight: 600;
+}
+
+.container {
+    margin-top: 2vw;
+    background: white;
+    height: 56vh;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    border-radius: 2vw;
+
+}
+
+.play-button {
+    margin: 2vw;
+    height: 7vw;
+    width: 8vw;
+    box-shadow: 0px 8px 27px -1px #f54c0fad;
+    border-radius: 22px;
+    text-align: center;
+    font-size: larger;
+    font-weight: 600;
+    border: none;
+    background-color: coral;
+}
+
+.button {
+    width: 50%;
+}
+
+.buttonAndImg {
+    height: 20vh;
+    display: flex;
+    justify-content: space-between;
+}
+
+.picture {
+    position: relative;
+    top: -3vw;
+}
+
+.image {
+    width: 100%;
+    height: 151%;
+}
+
+.game-options {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.border {
+    position: relative;
+    background: #E1E1E0;
+    height: 5vw;
+    border-radius: 0vw 0vw 3vw 3vw;
+    top: -33px;
+}
+
+.options {
+    margin-top: 2vw;
+}
+
+.option {
+    display: flex;
+    width: 40%;
+    justify-content: space-between;
+    margin: 1vw;
+    background: #003cc9;
+    height: 2vw;
+    border-radius: 13px;
+    padding: 6px;
+    color: wheat;
+}
+
+.status {
+    background: #309b30;
+    color: white;
+    border-radius: 6px;
+    font-size: 13px;
+    height: 1.2vw;
+    padding: 3px;
+    text-align: center;
+    display: flex;
+    align-items: end;
+}
+
+.second {
+    height: 1.3vw;
+    /* background-color: blue; */
+    width: 1.3vw;
+    display: flex;
+    align-items: center;
+}
+
+.option-label {
+    padding: 3px;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.footer {
+    margin: 1vw;
+}
+
+.disabled {
+    opacity: .7;
+    cursor: not-allowed;
+}
+
+.abled {
+    cursor: pointer;
+    background-color: #4471FF;
+
+}
+
+.second img {
+    width: 100%;
+    height: 100%;
+}
+
+.options {
+    border-top: 1px inset;
+}
+
+.footer {
+    position: relative;
+    bottom: -1.5vw;
+    /* text-align: center; */
+    padding-left: 30px;
+}
+
+.a {
+    background-color: #40A3FB;
+}
+
+.c {
+    background-color: #4540FE;
+}
+
+.d {
+    background-color: #6240FF;
+}
+
+@media screen and (max-width: 450px) {
+    .heading {
+        font-size: 6vw;
+    }
+
+    .world {
+        font-size: 3vw;
+    }
+
+    .play-button {
+        height: 17vh;
+        width: 22vh;
+    }
+
+    .container {
+        height: 60vh;
+        width: 90%;
+
+    }
+
+    main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+        height: 100%;
+    }
+
+    .image {
+        height: 89%;
+    }
+
+    .game-options {
+        display: flex;
+
+        flex-direction: row;
+        justify-content: center;
+        gap: 2vw;
+    }
+
+    .option {
+        width: 80%;
+        height: 10%;
+        /* margin: 2vh; */
+        width: 40%;
+        height: 5vh;
+
+
+
+    }
+
+    .second {
+        height: 3vh;
+        /* background-color: blue; */
+        width: 3vh
+    }
+
+    .status {
+
+        height: 3vw;
+        z-index: 1;
+        position: relative;
+        transform: rotate(-43deg);
+
+
+
+        width: 10vh;
+        font-size: 7px;
+        left: -81%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+
+    }
+
+    .border {
+        width: 90%;
+        height: 6vh;
+        top: -1vw;
+        margin-bottom: 3vw;
+    }
+
+    .connect4 {
+        overflow: hidden;
+        height: 100%;
+    }
+
+    .options {
+        height: 33vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .footer {
+        top: .5vw;
+    }
+}
+
+@media (min-width: 450px) and (max-width: 850px) {
+    .heading {
+        font-size: 6vw;
+    }
+
+    .world {
+        font-size: 3vw;
+    }
+
+    .play-button {
+        height: 17vh;
+        width: 22vh;
+    }
+
+    .container {
+        height: 60vh;
+        width: 90%;
+
+    }
+
+    main {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+        height: 100%;
+    }
+
+    .image {
+        height: 89%;
+    }
+
+    .game-options {
+        display: flex;
+
+        flex-direction: row;
+        justify-content: center;
+        gap: 2vw;
+    }
+
+    .option {
+        width: 80%;
+        height: 10%;
+        /* margin: 2vh; */
+        width: 40%;
+        height: 5vh;
+
+
+
+    }
+
+    .second {
+        height: 3vh;
+        /* background-color: blue; */
+        width: 3vh
+    }
+
+    .status {
+
+        height: 3vw;
+        z-index: 1;
+        position: relative;
+        transform: rotate(-43deg);
+
+
+
+        width: 10vh;
+        font-size: 7px;
+        left: -81%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+
+    }
+
+    .border {
+        width: 90%;
+        height: 6vh;
+        top: -1vw;
+        margin-bottom: 3vw;
+    }
+
+    .connect4 {
+        overflow: hidden;
+        height: 100%;
+    }
+
+    .options {
+        height: 33vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .footer {
+        top: .5vw;
+    }
+}

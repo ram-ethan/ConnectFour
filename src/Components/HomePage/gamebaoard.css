@@ -1,0 +1,546 @@
+.main2c {
+    background: white;
+    width: 50%;
+    height: 66vh;
+    display: flex;
+    border-radius: 2vw;
+    background-color: #F3F3F3;
+    /* justify-content: space-between; */
+}
+
+.main3c {
+    width: 73%;
+    background: aliceblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 2vw
+}
+
+.tournament-result {
+    color: green;
+}
+
+.tournament {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 16vw;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+
+.main4c {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: sp;
+    /* gap: 3vw; */
+    flex-direction: column;
+
+}
+
+.plays {
+    /* height: 16vw; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2vw;
+    padding-bottom: 2vw;
+    margin-bottom: 1vw;
+    border-bottom: 1px solid;
+
+
+}
+
+.play1,
+.play2 {
+    display: flex;
+    justify-content: space-between;
+    /* width: 130%; */
+    gap: 2vw;
+    background: #D4F3DF;
+    margin: .3vw;
+    height: 3vw;
+    align-items: center;
+    padding: 10px;
+    border-radius: 1vw;
+}
+
+.play2 {
+    background-color: #F5ECD1;
+}
+
+.play1img img {
+
+    height: 81%;
+    width: 84%;
+
+}
+
+.play2img img {
+    height: 81%;
+    width: 84%;
+}
+
+.ment1 h5 {
+    text-align: center;
+    margin: 1vw 1vw 0vw 1vw;
+}
+
+.play1img,
+.play2img {
+    height: 3.3vw;
+    width: 3.3vw;
+}
+
+.ment1 h6 {
+    text-align: center;
+    margin: 1vw 1vw 0vw 1vw;
+}
+
+.ment2 h5 {
+    text-align: center;
+    margin: 1vw 1vw 0vw 1vw;
+}
+
+.ment2 h6 {
+    text-align: center;
+    margin: 1vw 1vw 0vw 1vw;
+}
+
+.end {
+    margin: 0vw 1vw 0vw 1vw;
+    height: 2.4vw;
+    border: none;
+    background-color: #FBFBFB;
+    color: #4171FE;
+    border-radius: 2vw;
+    box-shadow: 0px 1px 3px 0px grey;
+}
+
+.undo {
+    margin: 0vw 1vw 0vw 1vw;
+    height: 2.4vw;
+    border: none;
+    color: white;
+    background: #4171FE;
+    border-radius: 2vw;
+    box-shadow: 0px 2px 3px 1px #7575a2;
+}
+
+.playbtnt {
+    height: 25%;
+    /* background-color: aquamarine; */
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(7, 50px);
+    /* 7 columns */
+    grid-template-rows: repeat(6, 50px);
+    /* 6 rows */
+    gap: 2px;
+    /* Spacing between the cells */
+}
+
+.cell {
+    background-color: #809AFE;
+    margin: 1px;
+    /* Circular shape */
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cell::before {
+    content: '';
+    background-color: white;
+    width: 80%;
+    /* Circle size relative to the cell */
+    height: 80%;
+    border-radius: 50%;
+    display: block;
+}
+
+.tent1 {
+    margin: 0px;
+    font-size: 1vw;
+    margin-top: 2vw;
+    color: green;
+}
+
+.tournament-result {
+    color: green;
+    font-size: 15px;
+    margin-top: 3vw;
+}
+
+@media screen and (max-width:450px) {
+    .navs {
+        font-size: 4vw;
+    }
+
+    .main2c {
+        margin-top: 1vh;
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+    }
+
+    .main3c {
+        /* flex-direction: column; */
+        width: 100%;
+    }
+
+    .ment1 {
+        font-size: 5vw;
+
+    }
+
+
+
+    .tournament {
+        width: 80%;
+        height: 45%;
+    }
+
+    .plays {
+        width: 100%;
+        gap: 2vh;
+    }
+
+    .play1,
+    .play2 {
+        gap: 1vh;
+        height: 4vh;
+        width: 33vh;
+        justify-content: space-around;
+    }
+
+    .play1img {
+        height: 4.3vh;
+        width: 4.3vh;
+    }
+
+    .play1img img {
+        height: 82%;
+        width: 77%;
+    }
+
+    .play2img img {
+        height: 82%;
+        width: 77%;
+    }
+
+    .play2img {
+        height: 4.3vh;
+        width: 4.3vh;
+        ;
+
+    }
+
+    .undo {
+        height: 4vh;
+        font-size: 5vw;
+        margin-top: 3vw;
+
+    }
+
+    .boaard {
+        margin: 2vh;
+    }
+
+    .end {
+        margin-top: 3vw;
+        height: 4vh;
+
+        font-size: 5vw;
+    }
+
+    .play1name,
+    .play1score {
+        display: flex;
+        flex-direction: column;
+        gap: 2vw;
+    }
+
+    .play2name,
+    .play2score {
+        display: flex;
+        flex-direction: column;
+        gap: 2vw;
+    }
+
+    .tent1 {
+        font-size: 3vh !important;
+        color: green;
+        padding-top: 4vh;
+    }
+
+    .playbtnt {
+        justify-content: space-evenly;
+        height: 55%;
+    }
+
+    .tournament-result {
+        margin-top: 7vh;
+        font-size: 3vh;
+    }
+}
+
+
+
+@media (min-width: 450px) and (max-width: 800px) {
+    /* Your styles for screens between 450px and 800px go here */
+
+    .navs {
+        gap: 2vw;
+        padding-left: 1vw;
+        height: 8vh;
+    }
+
+    .main2c {
+        margin-top: 1vh;
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+    }
+
+    .main3c {
+        /* flex-direction: column; */
+        width: 100%;
+    }
+
+    .ment1 {
+        font-size: 5vw;
+
+    }
+
+
+
+    .tournament {
+        width: 80%;
+        height: 45%;
+    }
+
+    .plays {
+        width: 100%;
+        gap: 2vh;
+    }
+
+    .play1,
+    .play2 {
+        gap: 1vh;
+        height: 4vh;
+        width: 33vh;
+        justify-content: space-around;
+    }
+
+    .play1img {
+        height: 4.3vh;
+        width: 4.3vh;
+    }
+
+    .play1img img {
+        height: 82%;
+        width: 77%;
+    }
+
+    .play2img img {
+        height: 82%;
+        width: 77%;
+    }
+
+    .play2img {
+        height: 4.3vh;
+        width: 4.3vh;
+        ;
+
+    }
+
+    .undo {
+        height: 4vh;
+        /* font-size: 5vw; */
+        margin-top: 3vw;
+
+    }
+
+    .boaard {
+        margin: 2vh;
+    }
+
+    .end {
+        margin-top: 3vw;
+        height: 4vh;
+
+        /* font-size: 5vw; */
+    }
+
+    .play1name,
+    .play1score {
+        display: flex;
+        flex-direction: column;
+        gap: 2vw;
+    }
+
+    .play2name,
+    .play2score {
+        display: flex;
+        flex-direction: column;
+        gap: 2vw;
+    }
+
+    .tent1 {
+        font-size: 3vh !important;
+        color: green;
+        padding-top: 4vh;
+    }
+
+    .playbtnt {
+        justify-content: space-evenly;
+        height: 55%;
+    }
+
+    .tournament-result {
+        margin-top: 7vh;
+        font-size: 3vh;
+    }
+}
+
+
+
+
+@media (min-width: 800px) and (max-width: 1100px) {
+    /* Your styles for screens between 450px and 800px go here */
+
+    .mains {
+        height: auto;
+    }
+
+    .navs {
+        gap: 2vw;
+        padding-left: 1vw;
+        height: 8vh;
+    }
+
+    .main2c {
+        margin-top: 1vh;
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+    }
+
+    .main3c {
+        /* flex-direction: column; */
+        width: 100%;
+    }
+
+    .ment1 {
+        font-size: 5vw;
+
+    }
+
+    .ment1 h5 {
+        text-align: center;
+        margin: 1vh 1vh 0vh 1vh;
+    }
+
+
+    .tournament {
+        width: 80%;
+        height: 45%;
+    }
+
+    .plays {
+        width: 100%;
+        gap: 2vh;
+    }
+
+    .play1,
+    .play2 {
+        gap: 1vh;
+        height: 4vh;
+        width: 33vh;
+        justify-content: space-around;
+    }
+
+    .play1img {
+        height: 4.3vh;
+        width: 4.3vh;
+    }
+
+    .play1img img {
+        height: 82%;
+        width: 77%;
+    }
+
+    .play2img img {
+        height: 82%;
+        width: 77%;
+    }
+
+    .play2img {
+        height: 4.3vh;
+        width: 4.3vh;
+        ;
+
+    }
+
+    .undo {
+        height: 4vh;
+        /* font-size: 5vw; */
+        margin-top: 3vw;
+
+    }
+
+    .boaard {
+        margin: 2vh;
+    }
+
+    .end {
+        margin-top: 3vw;
+        height: 4vh;
+
+        /* font-size: 5vw; */
+    }
+
+    .play1name,
+    .play1score {
+        display: flex;
+        flex-direction: column;
+        gap: 1vw;
+    }
+
+    .play2name,
+    .play2score {
+        display: flex;
+        flex-direction: column;
+        gap: 1vw;
+    }
+
+    .tent1 {
+        font-size: 3vh !important;
+        color: green;
+        padding-top: 4vh;
+    }
+
+    .playbtnt {
+        justify-content: space-evenly;
+        height: 55%;
+    }
+
+    .tournament-result {
+        margin-top: 7vh;
+        font-size: 3vh;
+    }
+}

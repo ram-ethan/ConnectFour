@@ -1,0 +1,71 @@
+/* .app-container {
+  text-align: center;
+  padding: 20px;
+}
+
+.app-header {
+  background-color: #f0f0f0;
+  padding: 20px;
+}
+
+.play-area {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 40px 0;
+}
+
+.play-button {
+  background-color: orange;
+  padding: 20px;
+  font-size: 24px;
+  border-radius: 12px;
+  border: none;
+  cursor: pointer;
+}
+
+.game-image {
+  width: 300px;
+  height: auto;
+}
+
+.game-options {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.option {
+  background-color: #007bff;
+  color: white;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 8px;
+  width: 150px;
+}
+
+.option-label {
+  font-size: 18px;
+}
+
+.status {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #76c043;
+}
+
+.footer {
+  background-color: #f0f0f0;
+  padding: 10px;
+}
+
+@media (max-width: 768px) {
+  .play-area {
+    flex-direction: column;
+  }
+
+  .game-image {
+    margin-top: 20px;
+    width: 200px;
+  }
+} */
